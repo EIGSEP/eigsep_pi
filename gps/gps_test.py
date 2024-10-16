@@ -7,7 +7,7 @@ logger = logging.getLogger()
 logger.addHandler(logging.StreamHandler(sys.stdout))
 logger.setLevel(logging.DEBUG)
 ser = serial.Serial(
-    port="/dev/ttyACM1",
+    port="/dev/ttyACM0",
     baudrate=9600,
     parity=serial.PARITY_NONE,
     stopbits=serial.STOPBITS_ONE,
